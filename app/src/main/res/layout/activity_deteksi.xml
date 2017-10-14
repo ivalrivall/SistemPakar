@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.umaru.sistempakarpenyakitdalam.Diagnosa"
+    android:background="#fff9c4"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/view"
+        >
+
+        <include
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/toolbar_layout"
+            />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="200dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:text="Pilih Gejala"
+            android:textColor="@color/colorOrange"
+            android:id="@+id/pilihgejala"
+
+            android:textAlignment="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:visibility="invisible"
+            android:paddingTop="100dp"
+            android:layout_below="@+id/pilihgejala"
+            android:layout_marginTop="10dp"
+            android:text="gejalaplhn"
+            android:id="@+id/gejalapilihan" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:paddingTop="20dp"
+            android:layout_below="@+id/pilihgejala"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:id="@+id/gejala1" />
+    </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/radiogroup"
+    android:layout_marginTop="300dp"
+    android:layout_marginBottom="120dp"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:orientation="horizontal"
+    >
+        <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YA"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"
+        android:id="@+id/ya"
+        android:layout_gravity="center_vertical"
+            android:buttonTint="@color/colorOrange"
+            android:foregroundTint="@color/colorOrangeamber"/>
+
+    <RadioButton
+        android:id="@+id/tidak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_toRightOf="@+id/ya"
+        android:text="TIDAK"
+        android:textSize="20dp"
+        android:buttonTint="@color/colorOrange"
+        android:foregroundTint="@color/colorOrangeamber"/>
+</RadioGroup>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="440dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:weightSum="1">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="LANJUT"
+            android:textSize="20dp"
+            android:background="@color/colorOrange"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:id="@+id/lanjut"
+            android:onClick="lanjut"
+            android:layout_gravity="center"
+            android:textAlignment="center" />
+
+
+    </LinearLayout>
+</RelativeLayout>

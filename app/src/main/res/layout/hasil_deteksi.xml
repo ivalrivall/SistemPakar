@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff9c4"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/view">
+        <include
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/toolbar_layout"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Hasil Deteksi"
+                android:textSize="35dp"
+                android:textColor="@color/colorOrange"
+                android:textStyle="bold"
+                android:id="@+id/textView"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="26dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Gejala yang anda alami adalah:"
+                android:id="@+id/textView3"
+
+                android:layout_below="@+id/textView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="40dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" "
+
+                android:id="@+id/final_result"
+                android:layout_below="@+id/textView3"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_alignStart="@+id/textView3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Dari gejala-gejala yang Anda pilih, Hasil diagnosa anda adalah"
+                android:id="@+id/textView5"
+                android:layout_below="@+id/final_result"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView5"
+                android:id="@+id/linear1"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignLeft="@id/textView5"
+                android:layout_marginTop="48dp"
+
+                >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=""
+                android:layout_below="@id/textView5"
+                android:layout_marginTop="25dp"
+                android:backgroundTintMode="multiply"
+                android:background="@color/colorOrange"
+                android:textColor="#000000"
+                android:id="@+id/namapenyakit" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=""
+                    android:layout_below="@id/textView5"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/colorOrange"
+                    android:textColor="#000000"
+                    android:backgroundTintMode="multiply"
+                    android:id="@+id/penyakitnol" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=""
+                android:layout_below="@id/textView5"
+                android:layout_marginTop="25dp"
+                android:backgroundTintMode="multiply"
+                android:id="@+id/persen"
+                android:textColor="#000000"
+                android:background="@color/colorOrange"
+                android:layout_toRightOf="@+id/namapenyakit"
+                android:layout_above="@+id/namapenyakit"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=""
+
+                    android:backgroundTintMode="multiply"
+                    android:id="@+id/persen2"
+                    android:layout_toRightOf="@+id/namapenyakit"
+                    android:layout_above="@+id/namapenyakit"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=""
+
+                    android:backgroundTintMode="multiply"
+                    android:id="@+id/persen3"
+                    android:layout_toRightOf="@+id/namapenyakit"
+                    android:layout_above="@+id/namapenyakit"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=""
+
+                android:backgroundTintMode="multiply"
+                android:id="@+id/periksa"
+                android:layout_below="@+id/linear1"/>
+
+            <Button
+                android:id="@+id/mulailagi"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Deteksi Ulang"
+                android:background="@color/colorOrange"
+                android:textColor="#ffffff"
+                android:layout_below="@+id/linear1"
+                android:layout_marginTop="35dp" />
+               <!-- android:layout_toRightOf="@+id/periksa"
+                android:layout_toEndOf="@+id/periksa"-->
+
+
+            <Button
+                android:id="@+id/rsterdekat"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="RS Terdekat"
+                android:layout_alignBaseline="@+id/mulailagi"
+                android:layout_alignBottom="@+id/mulailagi"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/linear1"
+                android:layout_marginTop="35dp"
+                android:background="@color/colorOrange"
+                android:textColor="#ffffff"/>
+        </RelativeLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

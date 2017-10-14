@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="penjelasanapps" type="id" />
+    <item name="judulabout" type="id" />
+    <item name="judulpengembang" type="id" />
+    <item name="penjelasanpengembang" type="id" />
+    <item name="biodata" type="id" />
+</resources>
